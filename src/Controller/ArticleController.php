@@ -51,7 +51,7 @@ class ArticleController extends AbstractController
     }
 
     /**
-     * @Route("/user/login", name="login", methods={"GET"})
+     * @Route("/user/login", name="login", methods={"POST"})
      */
     public function connection(UserRepository $userRepository, Request $request, SerializerInterface $serializer): Response
     {
