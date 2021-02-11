@@ -25,7 +25,7 @@ class ArticleController extends AbstractController
     public function registration(Request $request, SerializerInterface $serializer, EntityManagerInterface $em, ValidatorInterface $validator): Response
     {
         $var =  $request->getContent();
-        try {lol
+        try {
             $user = $serializer->deserialize($var, User::class, 'json');
             $user->setDatecreation(new \DateTime());
 
